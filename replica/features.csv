@@ -1,0 +1,80 @@
+feature,area,priority,original,clone,notes
+Sign up and sign in,auth,must,yes,no,methods unverified (S03); Google sign-in likely for this audience
+Sign out and session handling,auth,must,yes,no,
+Account deletion,auth,must,yes,no,privacy policy promises deletion within 30 days of request
+Home page with entry points to sheets and practice and pricing,marketing,must,yes,no,S01
+Prep hub catalogue of subjects and sheets,sheets,must,yes,no,S06
+Sheet page with modules and sections and items,sheets,must,yes,no,S07
+Per-sheet progress bar and done/total counter,progress,must,yes,no,S07; prompts sign-in when signed out
+Mark an item done,progress,must,yes,no,S07 S08; manual vs automatic on accept is unverified
+Flag an item for revision,progress,should,yes,no,revision views mentioned on the sheet page
+Lesson page with article and multi-language code samples,learning,must,yes,no,S08
+Video in lessons,learning,could,yes,no,our own videos; theirs are out of scope (see skip row)
+Practice hub with topic and pattern and difficulty filters,practice,must,yes,no,S11
+Problem workspace with statement and editor split pane,practice,must,yes,no,S12
+Starter code stub per language,practice,must,yes,no,S12 class stub
+Languages C++ Java Python JavaScript,practice,must,yes,no,full list unverified
+Run against sample and custom input,judge,must,yes,no,unlimited runs on the free tier per source 1
+Submit against hidden tests with verdicts,judge,must,yes,no,accepted / wrong answer / compile error / runtime error / time limit
+Submission history per problem,judge,must,yes,no,"""You haven't submitted yet"" empty state"
+Time and memory limits and sandboxed execution,judge,must,yes,no,hard part #1
+Progressive hints,practice,should,yes,no,S12
+Written editorial per problem,practice,must,yes,no,our own editorials
+Editorial and premium problems gated by plan,payments,should,yes,no,S13 premium locks
+Problem of the Day with dated archive,engagement,must,yes,no,S17; +20 coins in the original
+Custom problem lists (bookmarks),revision,must,yes,no,S22
+Notes on problems and lessons grouped by subject,revision,should,yes,no,S23
+Export notes,revision,could,yes,no,S23
+Saved code per problem,revision,could,yes,no,"""CodeSpace""; existence medium confidence"
+Dashboard with daily tasks and progress overview,dashboard,must,yes,no,S20
+Learning timer,dashboard,could,yes,no,S20
+Online IDE with custom input and tabs and share link,ide,should,yes,no,S18
+DSA sheets (beginner-to-advanced roadmap and short interview sheets),content,must,yes,no,our own curriculum and sequencing; theirs is out of scope
+DBMS subject sheet with lessons and module quizzes,cs subjects,must,yes,no,S07 S09
+Operating systems subject sheet,cs subjects,must,yes,no,
+Computer networks subject sheet,cs subjects,must,yes,no,
+OOPs subject sheet with exercises and quizzes,cs subjects,must,yes,no,
+Low-level design sheet,cs subjects,should,yes,no,
+SQL practice with a SQL judge,practice,should,yes,no,S13 /plus/sql; needs a sandboxed database per run
+Data engineering track,cs subjects,could,yes,no,
+Module quizzes (MCQ),quizzes,must,yes,no,S09
+Quantitative aptitude topics with practice,aptitude,must,yes,no,S14
+Logical reasoning topics with practice,aptitude,must,yes,no,S14
+Verbal ability topics with practice,aptitude,must,yes,no,S14
+Timed aptitude mock tests with score and review,aptitude,must,yes,no,S16; format unverified
+Company-tagged problems with company filter,company,should,yes,no,S11 S19
+Recency filter on company questions (30/60/180 days),company,should,yes,no,needs our own asked-in data
+Interview experiences by company (round-wise),community,should,yes,no,S31
+Pricing page with passes and bundles,payments,must,yes,no,S02
+Checkout with coupon codes,payments,must,yes,no,S04; INR + UPI + GST invoices for this audience
+Plan entitlements by subject and validity period,payments,must,yes,no,2-month and 12-month passes in the original
+Account page with active plan and expiry,payments,should,yes,no,S05
+AI assistant for doubts and progressive hints,ai,should,yes,no,S25
+AI code review of the user's submission,ai,should,yes,no,
+AI interview follow-up questions,ai,could,yes,no,
+AI credit allowance per plan with metering,ai,should,yes,no,original grants e.g. 3500 or 10000 credits by plan
+Study planner from level and target and deadline and daily time,planner,should,yes,no,S21
+Auto-reschedule missed planner tasks,planner,should,yes,no,
+Sprint quizzes in the planner,planner,could,yes,no,
+Community feed with tabs,community,should,yes,no,S28
+Post detail with upvotes and comments,community,should,yes,no,S29
+Share an interview experience with structured fields,community,should,yes,no,S30; needs moderation
+Success stories,community,could,yes,no,
+Coins for check-in and solves and quizzes and streaks,gamification,should,yes,no,S32
+Leaderboard by period,gamification,should,yes,no,S32
+Trophies and titles,gamification,could,yes,no,rules unknown
+Coin store and redemption,gamification,could,yes,no,S33; digital rewards only for us (plan days and coupons)
+Daily streaks,gamification,should,yes,no,streak bonus in coins; streak UI unverified
+User profile with activity and achievements,profile,should,yes,no,S26
+Contests,contests,could,yes,no,S34; nothing public found
+Legal pages (terms and privacy and refund),legal,must,yes,no,S35; write our own
+Mobile-friendly web layout,platform,must,yes,no,no native app found
+Their sheet curriculum and sequencing,content,must,yes,skip,their curated work; terms forbid copying; we write our own
+Their video library (600+ videos),content,should,yes,skip,owned content
+Their lessons and editorials and problem statements and test cases,content,must,yes,skip,owned content; write fresh
+Their company-question dataset,company,should,yes,skip,their data; build ours from user reports
+Their interview experiences and community posts,community,should,yes,skip,their users' content and network
+Their brand names (Striver / takeUforward / TUF+ / TUFY / ZENKAI / Planly / NoteSpace / CodeSpace / Prep Hub),brand,must,yes,skip,trademarks and identity; goes in the brand.json avoid list
+Physical merch and partner experiences in the store,gamification,could,yes,skip,depends on their partnerships
+Founder's YouTube audience,marketing,should,yes,skip,the network is not a feature
+High-level design and backend principles tracks,cs subjects,could,no,no,listed as launching 2027 in the original; an early-mover option for us
